@@ -1,0 +1,197 @@
+<!-- 
+
+
+
+                 ▄              ▄    
+                ▌▒█           ▄▀▒▌   
+                ▌▒▒█        ▄▀▒▒▒▐   
+               ▐▄█▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐   
+             ▄▄▀▒▒▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐   
+           ▄▀▒▒▒░░░▒▒▒░░░▒▒▒▀██▀▒▌   
+          ▐▒▒▒▄▄▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄▒▌  
+          ▌░░▌█▀▒▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐  
+         ▐░░░▒▒▒▒▒▒▒▒▌██▀▒▒░░░▒▒▒▀▄▌ 
+         ▌░▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒▌ 
+        ▌▒▒▒▄██▄▒▒▒▒▒▒▒▒░░░░░░░░▒▒▒▐ 
+        ▐▒▒▐▄█▄█▌▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▒▒▒▌
+        ▐▒▒▐▀▐▀▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▒▐ 
+         ▌▒▒▀▄▄▄▄▄▄▀▒▒▒▒▒▒▒░▒░▒░▒▒▒▌ 
+         ▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░▒▒▄▒▒▐  
+          ▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░▒▄▒▒▒▒▌  
+            ▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀   
+              ▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀     
+                 ▀▀▀▀▀▀▀▀▀▀▀▀        
+
+-->
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: rgb(0,0,0);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      overflow: hidden;
+    }
+    
+    header {
+      width: 100%;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 80rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .content {
+      display: flex;
+      align-items: start;
+      gap: 1rem;
+    }
+
+    .main-content {
+      /*flex: 1;*/
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    .logo {
+      height: 48px;
+      width: auto;
+    }
+
+    h1 {
+      color: white;
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    p {
+      color: rgb(186, 193, 205);
+      font-size: 0.875rem;
+      margin: 0.25rem 0 0 0;
+    }
+
+    @media (max-width: 1024px) {
+      h1 {
+        font-size: 0.875rem;
+      }
+      p {
+        font-size: 0.75rem;
+      }
+    }
+
+    .usa-banner {
+      background-color: black;
+      color: white;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 25px;
+      padding: 0;
+    }
+
+    .usa-banner__header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      z-index: 1001;
+      padding: 1rem;
+      background: white;
+      color: black;
+      text-decoration: none;
+    }
+
+    .skip-link:focus {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    footer {
+      width: 100%;
+      padding: 1rem 0;
+      background: black;
+      margin-bottom: 100px;
+    }
+
+    footer .logo {
+      height: 48px;
+      width: auto;
+    }
+  </style>
+  
+  <title>DOGE: Department of Government Efficiency</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DOGE: Department of Government Efficiency">
+  <meta property="og:title" content="DOGE: Department of Government Efficiency">
+  <meta property="og:description" content="The people voted for major reform.">
+  <meta property="og:url" content="https://x.com/doge">
+  <meta property="og:site_name" content="DOGE: Department of Government Efficiency">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="images/open_graphic.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DOGE: Department of Government Efficiency">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@doge">
+  <meta name="twitter:creator" content="@doge">
+  <meta name="twitter:title" content="DOGE: Department of Government Efficiency">
+  <meta name="twitter:description" content="The people voted for major reform.">
+  <meta name="twitter:image" content="images/shortcut.png">
+  <link rel="canonical" href="https://x.com/doge">
+  <link rel="shortcut icon" href="images/shortcut.png">
+  <link rel="apple-touch-icon" href="images/apple-touch.png">
+</head>
+<body>
+  <header>
+    <div class="usa-banner" role="banner">
+      <div class="usa-banner__header">
+        <p class="usa-banner__header-text">An official website of the United States government</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <div class="container">
+      <div class="content">
+        <img src="images/public.avif" alt="DOGE Logo" class="logo" width="48" height="48">
+        <div>
+          <h1>Department of Government Efficiency</h1>
+          <p>The people voted for major reform.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="content" style="width: 325px; height: 300px; 
+      margin: 0 auto;">
+        <img src="images/dog.png" height="300" width="325">
+      </div>
+    </div>
+  </footer>
+
+</body></html>
